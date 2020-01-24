@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.topbar {
+    background-color: #f5f5f5;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.topbar img {
+    height: 40px;
+    margin-right: auto;
+}
+
+.creds {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    border-right: 1px solid #ccc;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+.drop {
+    display: flex;
+    border: none;
+    outline: none;
+    padding: 8px;
+    background-color: inherit;
+    align-items: center;
+    cursor: pointer;
+}
+
+.drop:hover .drop-content {
+    display: inline-block;
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.drop-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.sidebar {
+    width: 64px;
+    background-color: #132732;
+    height: calc(100% - 50px);
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+
+.sidebar i {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    color: white;
+    overflow: hidden;
+}
+
+#active {
+    background-color: white;
+    color: #57be8e;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    align-content: center;
+    margin: auto;
+}
+
+.sidebar i:hover {
+    background-color: #264e63;
+}
+
+.header {
+    margin-left: 64px;
+    background-color: #1c96a3;
+    padding: 60px 25px;
+    color: white;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.main {
+    margin-left: 64px;
+}
+
+.main table {
+    width: calc(100% - 64px);
+    float: left;
+    margin: 15px;
+}
+
+.main td {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.main th {
+    text-align: left;
+    font-size: 14px;
+    padding: 15px;
+    color: #adadad;
+}
